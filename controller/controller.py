@@ -37,7 +37,7 @@ class Table():
         relevant = [symbol for symbol in irrelevant if symbol.endswith('USDT')]
 
         check.sort_values(by=['priceChangePercent'], ascending=False)
-        js = check.to_json()
+        js = check.to_json(orient = 'records')
         y = json.loads(js)
 
         return y
