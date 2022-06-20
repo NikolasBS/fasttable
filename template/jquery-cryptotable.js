@@ -6,6 +6,7 @@ $(document).ready(function () {
             dataType: 'json',
             dataSrc: '',
         },
+        order: [[1, 'desc']],
         columns: [
             { data: 'symbol' },
             { data: 'priceChangePercent' },
